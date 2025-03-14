@@ -1,0 +1,3 @@
+VITE_BASE_URL=https://app.cause.vision/api/v2
+VITE_BARONG_URL=https://app.cause.vision/api/v2/barong
+VITE_PEATIO_URL=https://app.cause.vision/api/v2/peatio

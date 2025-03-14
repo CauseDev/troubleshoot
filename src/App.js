@@ -5,7 +5,7 @@ function App() {
   const [responseData, setResponseData] = useState(null);
 
   const API_URL =
-    "https://rglf0owlbl.execute-api.us-east-1.amazonaws.com/barong/identity";
+    "https://rglf0owlbl.execute-api.us-east-1.amazonaws.com/api/v2/barong/identity";
 
   const postData = {
     session_type: "email",
@@ -23,11 +23,11 @@ function App() {
         },
       });
 
-      setResponseData(response.data);
+      setResponseData(response?.data);
     } catch (error) {
       console.error(
         "Error:",
-        error.response ? error.response.data : error.message
+        error.response ? error?.response.data : error?.message
       );
       setResponseData(error.response ? error.response.data : "Request failed");
     }
