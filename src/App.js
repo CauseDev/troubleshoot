@@ -17,11 +17,13 @@ function App() {
 
   const sendPostRequest = async () => {
     try {
-      const response = await axios.post(API_URL, postData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await axios.post(API_URL, postData,
+      //    {
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      // }
+    );
 
       setResponseData(response?.data);
     } catch (error) {
